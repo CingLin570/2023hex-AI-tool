@@ -57,6 +57,9 @@ blockquote, q {
 .overflow-hidden {
   overflow: hidden !important; }
 
+.position-relative {
+  position: relative; }
+
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
