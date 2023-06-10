@@ -1,0 +1,33 @@
+.loading {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .65);
+  backdrop-filter: blur(5px);
+  
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.loading:after {
+  content: "";
+  height: 64px;
+  width: 64px;
+  display: block;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: infinite rotate .5s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

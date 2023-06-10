@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+  max-width: 1296px;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+}
+
+.row {
+  display: flex;
+  margin-left: -($gutter-width / 2);
+  margin-right: -($gutter-width / 2);
+  flex-wrap: wrap;
+}
+
+%col {
+  position: relative;
+  min-height: 1px;
+  padding-left: $gutter-width / 2;
+  padding-right: $gutter-width / 2;
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+@for $i from 1 to $grid-num + 1 {
+  .col-#{$i} {
+    @extend %col;
+    max-width: 100% * ($i / $grid-num);
+    flex: 0 0 (100% * ($i / $grid-num));
+  }
+}
+
+@for $i from 1 to $grid-num + 1 {
+  .col-md-#{$i} {
+    @include mobile() {
+      max-width: 100% * ($i / $grid-num);
+      flex: 0 0 (100% * ($i / $grid-num));
+    }
+  }
+}
