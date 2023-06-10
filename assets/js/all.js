@@ -1,6 +1,25 @@
 "use strict";
 
-// 按鈕展開
+// 輪播效果
+var swiper = new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 2
+    },
+    375: {
+      slidesPerView: 1
+    }
+  },
+  spaceBetween: 24
+}); // 按鈕展開
+
 var dropdown = document.querySelectorAll('.dropdown-toggle');
 var dropdownMenu = document.querySelectorAll('.dropdown-menu');
 dropdown.forEach(function (item, index) {
