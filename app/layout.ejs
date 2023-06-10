@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="loading"></div>
+  <nav class="navbar mb-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center border-bottom
+      border-white pb-20 pt-20">
+        <h1 class="logo">
+          <a href="./index.html">
+            AI工具王
+          </a>
+        </h1>
+        <ul class="navbar-list">
+          <li class="navbar-item mr-md-0 mr-20">
+            <a href="./index.html" class="link-white">首頁</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./sale.html" class="link-white">定價</a>
+          </li>
+        </ul>
+        <div class="navbar-mobileList">
+          <ul class="navbar-mobileList-list">
+            <li class="navbar-mobileList-item mr-md-0 mr-20">
+              <a href="./index.html" class="link-white">首頁</a>
+            </li>
+            <li class="navbar-mobileList-item">
+              <a href="./sale.html" class="link-white">定價</a>
+            </li>
+          </ul>
+          <div class="container">
+            <div class="navbar-mobileList-footer d-flex flex-column align-items-start border">
+              <p class="navbar-mobileList-text mt-32 mb-36">AI工具王 © 2023</p>
+              <ul class="d-flex mb-32">
+                <li><a href="#" class="text-white mr-20">Facebook</a></li>
+                <li><a href="#" class="text-white mr-20">Twitter</a></li>
+                <li><a href="#" class="text-white">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="navbar-menu link-white">
+          <span class="material-icons navbar-icons-open">
+            menu
+          </span>
+          <span class="material-icons navbar-icon-close">
+            close
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <%- contents %>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-banner">
+        <p class="footer-title">
+          首頁<br>
+          定價
+        </p>
+        <h2 class="logo">
+          <a href="./index.html">
+            AI工具王
+          </a>
+        </h2>
+      </div>
+      <nav class="navbar d-flex align-items-center">
+          <p class="mr-100">AI工具王 © 2023</p>
+          <ul class="navbar-list d-flex order-md-1 w-auto w-md-100">
+            <li><a href="#" class="text-white mr-20">Facebook</a></li>
+            <li><a href="#" class="text-white mr-20">Twitter</a></li>
+            <li><a href="#" class="text-white">Instagram</a></li>
+          </ul>
+          <a href="#" id="backTop" class="ml-auto link-white">
+            Back to top
+            <span class="material-icons">
+              arrow_upward
+            </span>
+          </a>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js' integrity='sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==' crossorigin='anonymous'></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

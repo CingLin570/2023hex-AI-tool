@@ -1,0 +1,19 @@
+.swiper {
+  padding-bottom: 48px;
+  --swiper-pagination-bottom: 1px;
+  --swiper-pagination-bullet-size: 12px;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination-bullet {
+  background: #fff;
+}
+.swiper-pagination-bullet-active {
+  --swiper-pagination-bullet-size: 24px;
+}
+.swiper-slide, swiper-slide {
+  height: auto;
+}

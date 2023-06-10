@@ -1,0 +1,22 @@
+.header {
+  margin-bottom: 160px;
+  &-list {
+    margin-bottom: 5rem;
+  }
+  &-item {
+    font-size: 120px;
+    line-height: 1.2;
+    font-weight: 900;
+    @include mobile {
+      font-size: 48px;
+    }
+  }
+  &-text {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    @include mobile() {
+      font-size: 28px;
+    }
+  }
+}

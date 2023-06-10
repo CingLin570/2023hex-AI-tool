@@ -1,0 +1,183 @@
+// 首頁
+.search{
+  background: #fff;
+  color: #000;
+  border-radius: 160px;
+  @include mobile {
+    border-radius: 20px;
+  }
+  &-title {
+    padding-top: 160px;
+    padding-bottom: 80px;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center;
+    @include mobile {
+      padding-top: 80px;
+      padding-bottom: 32px;
+      font-size: 32px;
+    }
+  }
+  &-input {
+    display: flex;
+    padding: 20px 40px;
+    background: #F2F2F2;
+    border-radius: 16px;
+    input {
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+      border: none;
+      background: transparent;
+    }
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    .material-icons {
+      font-size: 16px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      white-space: nowrap;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    a {
+      display: block;
+      padding: 8px 16px;
+      border-radius: 16px;
+      &:hover {
+        background: #F2F2F2;
+      }
+    }
+    @include mobile {
+      order: 3;
+      overflow-x: auto;
+      margin-top: 16px;
+    }
+  }
+  &-page {
+    padding-bottom: 162px;
+    @include mobile() {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+.list-group {
+  &-item {
+    border-top: 1px solid rgba(0,0,0,.125);
+    padding: 1.25rem 2.25rem;
+  }
+}
+
+.service {
+  margin-bottom: 160px;
+  &-title {
+    font-size: 32px;
+    font-weight: 900;
+  }
+  &-text {
+    font-size: 48px;
+    font-weight: 900;
+  }
+  &-item {
+    @include mobile() {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .card {
+    border: 1px solid #525252;
+  }
+  .card-body {
+    padding: 5rem 2.5rem;
+  }
+  .material-icons {
+    font-size: 80px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.cooperate {
+  margin-bottom: 160px;
+  .shadow {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to right, #020202 4%, transparent 30%, transparent 50%, transparent 70%, #020202 96%);
+    }
+  }
+  &-title {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 900;
+  }
+  &-img {
+    height: 40px;
+    width: 160px;
+    object-fit: cover;
+  }
+  &-list {
+    @include mobile() {
+      overflow-x: auto;
+    }
+  }
+}
+
+.customer {
+  margin-bottom: 160px;
+  &-list {
+    .material-icons {
+      font-size: 16px;
+    }
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .card-body {
+    padding: 2.25rem;
+  }
+  .card-text {
+    font-size: 16px;
+  }
+  .card-footer {
+    padding: 2.25rem;
+  }
+  .pagination {
+    .material-icons {
+      &:not(:first-child) {
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+.start {
+  text-align: center;
+  margin: 158px 0 160px 0;
+  &-title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    @include mobile() {
+      font-size: 32px;
+    }
+  }
+  &-btn {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .material-icons {
+    font-size: 15px;
+  }
+}

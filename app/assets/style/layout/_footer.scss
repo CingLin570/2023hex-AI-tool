@@ -1,0 +1,51 @@
+.footer {
+  &-banner {
+    padding: 80px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    @include mobile() {
+      flex-direction: column;
+    }
+  }
+  &-title {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.2;
+    @include mobile() {
+      font-size: 48px;
+      order: 2;
+    }
+  }
+  .navbar {
+    justify-content: flex-start;
+    margin-bottom: 32px;
+    margin-top: 32px;
+    @include mobile() {
+      flex-wrap: wrap;
+    }
+    .material-icons{
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 10px;
+    }
+    &-list {
+      @include mobile() {
+        margin-top: 36px;
+      }
+    }
+  }
+  .logo {
+    a {
+      @include mobile() {
+        width: 245px;
+        height: 40px;
+      }
+    }
+    @include mobile() {
+      order: 1;
+      margin-bottom: 40px;
+    }
+  }
+}
