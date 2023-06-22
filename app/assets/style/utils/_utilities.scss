@@ -110,6 +110,9 @@
 .mb-80 {
   margin-bottom: 80px !important;
 }
+.mb-100 {
+  margin-bottom: 100px !important;
+}
 .mb-160 {
   margin-bottom: 160px;
 }
@@ -214,7 +217,16 @@
     padding-left: $value !important;
   }
 }
-
+.mb-md-40 {
+  @include mobile() {
+    margin-bottom: 40px !important;
+  }
+}
+.mb-md-180 {
+  @include mobile() {
+    margin-bottom: 180px !important;
+  }
+}
 .mr-md-0 {
   @include mobile() {
     margin-right: 0px !important;
