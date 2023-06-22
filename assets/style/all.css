@@ -183,6 +183,9 @@ blockquote, q {
 .mb-80 {
   margin-bottom: 80px !important; }
 
+.mb-100 {
+  margin-bottom: 100px !important; }
+
 .mb-160 {
   margin-bottom: 160px; }
 
@@ -427,6 +430,14 @@ blockquote, q {
 
 .ps-6 {
   padding-left: 3rem !important; }
+
+@media (max-width: 992px) {
+  .mb-md-40 {
+    margin-bottom: 40px !important; } }
+
+@media (max-width: 992px) {
+  .mb-md-180 {
+    margin-bottom: 180px !important; } }
 
 @media (max-width: 992px) {
   .mr-md-0 {
@@ -1055,6 +1066,82 @@ hr {
             order: 1;
     margin-bottom: 40px; } }
 
+.search {
+  background: #fff;
+  color: #000;
+  border-radius: 160px; }
+  @media (max-width: 992px) {
+    .search {
+      border-radius: 20px; } }
+  .search-title {
+    padding-top: 160px;
+    padding-bottom: 80px;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-align: center; }
+    @media (max-width: 992px) {
+      .search-title {
+        padding-top: 80px;
+        padding-bottom: 32px;
+        font-size: 32px; } }
+  .search-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 40px;
+    background: #F2F2F2;
+    border-radius: 16px; }
+    .search-input input {
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+      border: none;
+      background: transparent; }
+  .search-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+    white-space: nowrap; }
+    .search-nav .material-icons {
+      font-size: 16px; }
+    @media (max-width: 992px) {
+      .search-nav {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        white-space: nowrap; } }
+  .search-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .search-list a {
+      display: block;
+      padding: 8px 16px;
+      border-radius: 16px; }
+      .search-list a:hover {
+        background: #F2F2F2; }
+    @media (max-width: 992px) {
+      .search-list {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3;
+        overflow-x: auto;
+        margin-top: 16px;
+        margin-right: auto;
+        margin-left: auto; } }
+  .search-page {
+    padding-bottom: 162px; }
+    @media (max-width: 992px) {
+      .search-page {
+        padding-bottom: 80px; } }
+
 .sale-title {
   font-size: 32px;
   line-height: 1.2;
@@ -1137,79 +1224,6 @@ hr {
     background: transparent;
     color: #fff;
     border-color: #fff; }
-
-.search {
-  background: #fff;
-  color: #000;
-  border-radius: 160px; }
-  @media (max-width: 992px) {
-    .search {
-      border-radius: 20px; } }
-  .search-title {
-    padding-top: 160px;
-    padding-bottom: 80px;
-    font-size: 80px;
-    line-height: 1.2;
-    font-weight: 900;
-    text-align: center; }
-    @media (max-width: 992px) {
-      .search-title {
-        padding-top: 80px;
-        padding-bottom: 32px;
-        font-size: 32px; } }
-  .search-input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 20px 40px;
-    background: #F2F2F2;
-    border-radius: 16px; }
-    .search-input input {
-      width: 100%;
-      font-size: 16px;
-      line-height: 1.5;
-      border: none;
-      background: transparent; }
-  .search-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 40px; }
-    .search-nav .material-icons {
-      font-size: 16px; }
-    @media (max-width: 992px) {
-      .search-nav {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        white-space: nowrap; } }
-  .search-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .search-list a {
-      display: block;
-      padding: 8px 16px;
-      border-radius: 16px; }
-      .search-list a:hover {
-        background: #F2F2F2; }
-    @media (max-width: 992px) {
-      .search-list {
-        -webkit-box-ordinal-group: 4;
-            -ms-flex-order: 3;
-                order: 3;
-        overflow-x: auto;
-        margin-top: 16px; } }
-  .search-page {
-    padding-bottom: 162px; }
-    @media (max-width: 992px) {
-      .search-page {
-        padding-bottom: 80px; } }
 
 .list-group-item {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
